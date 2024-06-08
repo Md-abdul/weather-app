@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <h1 style="font-size: 50px;">Welcome to Weather</h1>
+    <div class="wrapper">
+
+      <div class="container">
+        <div class="search-box">
+          <i class="fa-solid fa-map-pin"></i>
+          <input type="text" placeholder="Enter your location" />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="weather-box">
+          <div class="box">
+            <div class="info-weather">
+              <div class="weather">
+                <img src="images/cloud.png" alt="picture of a cloudy sky" />
+                <p class="temperature">8<span>°C</span></p>
+                <p class="description">Cloudy Sky</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <div class="info-humidity">
+                <span>20%</span>
+              </div>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <div class="info-wind">
+                <span>2km/h</span>
+              </div>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="not-found">
+          <div class="box">
+            <img src="images/404.png" alt="404 error picture" />
+            <p>Please enter a valid location</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast-container">
+        <div class="current-date-time">
+          <p id="current-time"></p>
+          <p id="current-date"></p>
+        </div>
+        <div class="forecast">
+          <div class="forecast-day">
+            <div class="box forecast-day">
+            <div>
+              <p class="day">Day 1</p>
+              <img src="images/cloud.png" alt="weather image" />
+            </div>
+            <div class="forecast-details">
+              <p class="temperature">Temperature: <span>25°C</span></p>
+              <p class="humidity">Humidity: <span>60%</span></p>
+              <p class="wind-speed">Wind Speed: <span>15 km/h</span></p>
+            </div>
+          </div>
+        </div>
+          <!-- Repeat for more forecast days -->
+          <div class="forecast-day">
+            <div>
+              <p class="day">Day 2</p>
+              <img src="images/cloud.png" alt="weather image" />
+            </div>
+            <div class="forecast-details">
+              <p class="temperature">Temperature: <span>22°C</span></p>
+              <p class="humidity">Humidity: <span>65%</span></p>
+              <p class="wind-speed">Wind Speed: <span>10 km/h</span></p>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div>
+              <p class="day">Day 3</p>
+              <img src="images/cloud.png" alt="weather image" />
+            </div>
+            <div class="forecast-details">
+              <p class="temperature">Temperature: <span>20°C</span></p>
+              <p class="humidity">Humidity: <span>70%</span></p>
+              <p class="wind-speed">Wind Speed: <span>5 km/h</span></p>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div>
+              <p class="day">Day 4</p>
+              <img src="images/cloud.png" alt="weather image" />
+            </div>
+            <div class="forecast-details">
+              <p class="temperature">Temperature: <span>18°C</span></p>
+              <p class="humidity">Humidity: <span>75%</span></p>
+              <p class="wind-speed">Wind Speed: <span>20 km/h</span></p>
+            </div>
+          </div>
+          <div class="forecast-day">
+            <div>
+              <p class="day">Day 5</p>
+              <img src="images/cloud.png" alt="weather image" />
+            </div>
+            <div class="forecast-details">
+              <p class="temperature">Temperature: <span>15°C</span></p>
+              <p class="humidity">Humidity: <span>80%</span></p>
+              <p class="wind-speed">Wind Speed: <span>25 km/h</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="not-found">
+          <div class="box">
+            <img src="images/404.png" alt="404 error picture" />
+            <p>Please enter a valid location</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2df9982f5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
